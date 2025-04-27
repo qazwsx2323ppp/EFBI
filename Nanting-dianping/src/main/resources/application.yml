@@ -35,3 +35,9 @@ mybatis:
 logging:
   level:
     org.springframework.jdbc.support.JdbcTransactionManager: debug
+aws:
+  s3:
+    endpoint: http://10.21.22.24:9000
+    accessKey: HWKb8DSlRGRU
+    secretKey: 9fnHn2BPlOnNs5cxykmN270nH
+    bucketName: dianping
