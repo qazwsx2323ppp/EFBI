@@ -114,7 +114,7 @@ public class S3FileService implements FileService {
 
     @Override
     public String uploadFile(InputStream inputStream, String extensionName)  {
-        String key = generateKey() + "." + extensionName;
+        String key = generateKey() + (extensionName != null && !extensionName.isEmpty() ? "." + extensionName : "");
         uploadFile(key, inputStream);
         return key;
     }
