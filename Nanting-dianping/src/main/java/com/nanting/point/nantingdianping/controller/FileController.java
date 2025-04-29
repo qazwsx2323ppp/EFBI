@@ -50,5 +50,6 @@ public class FileController {
         String key = fileService.uploadFile(file.getInputStream(), extension);
 
         return key;
+        // return fileService.uploadFile(file.getInputStream(), extension);
     }
 }
