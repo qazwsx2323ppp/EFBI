@@ -26,6 +26,7 @@ public class UserController {
     public Result sendCode(String phone, HttpSession session){
         log.info("发送验证码");
         return userService.sendCode(phone,session);
+        // 返回ok
     }
 
     /**
@@ -37,5 +38,6 @@ public class UserController {
         // 实现登录功能
         return userService.login(loginForm, session);
     }
+
 
 }
