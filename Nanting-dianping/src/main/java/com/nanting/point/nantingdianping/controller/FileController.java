@@ -11,7 +11,6 @@ import java.io.InputStream;
 
 @RestController
 public class FileController {
-
     @Autowired
     private FileService fileService;
 
@@ -29,6 +28,7 @@ public class FileController {
                 .ok()
                 .headers(headers)
                 .body(bytes);
+            // return ResponseEntity.ok(bytes);
     }
 
     @PostMapping("/file")
